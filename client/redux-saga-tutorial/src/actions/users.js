@@ -1,12 +1,12 @@
 export const Types = {
-    GET_USERS_REQUEST: 'GET_USERS_REQUEST',
-    GET_USERS_SUCCESS: 'GET_USERS_SUCCESS',
+    GET_USERS_REQUEST: 'users/get_users_request',
+    GET_USERS_SUCCESS: 'users/get_users_success',
 }
 
-export const GetUsersRequest = () => ({
-    type: Types.GET_USERS_REQUESTGET_USERS_REQUEST
+export const getUsersRequest = () => ({
+    type: Types.GET_USERS_REQUEST
 });
-export const GetUsersSuccess = ({items}) => ({
+export const getUsersSuccess = ({items}) => ({
     type: Types.GET_USERS_SUCCESS,
     payload: {
         items
