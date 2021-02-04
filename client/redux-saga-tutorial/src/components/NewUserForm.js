@@ -17,8 +17,8 @@ class NewUserForm extends Component {
     handleSubmit = (e) => {
         e.preventDefault()
         this.props.onSubmit({
-            firstName: this.state.firstName,
-            lastName: this.state.lastName
+            firstName: this.state.firstName[0].toUpperCase() + this.state.firstName.slice(1),
+            lastName: this.state.lastName[0].toUpperCase() + this.state.lastName.slice(1)
         });
 
         this.setState({
